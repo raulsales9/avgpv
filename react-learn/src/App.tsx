@@ -1,13 +1,17 @@
 import React from 'react';
 import logo from './logo.svg';
+import { gsap } from "gsap";
 import './App.css';
-import { TestPrimero } from './components/header/header';
-import { Test2 } from './components/test2';
+import { Header } from './components/header/header';
+import { HomePage } from './components/home/HomePage';
+import  { Footer } from './components/footer/footer';
+
 function App() {
   return (
     <div className="App">
-      < TestPrimero />
-      <Test2 />
+      < Header />
+      <HomePage/>
+      <Footer />
     </div>
   );
 }

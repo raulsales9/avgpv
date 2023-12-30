@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
-
-export const TestPrimero = () => {
+import logo from "./../../assets/img/llamada-telefonica.svg"
+export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isUserAuthenticated, setUserAuthenticated] = useState(false); // Añade tu lógica de autenticación aquí
-  const currentUser = { name: 'Usuario' }; // Añade tu lógica de usuario aquí
+  const [isUserAuthenticated, setUserAuthenticated] = useState(false);
+  const currentUser = { name: 'Usuario' };
 
   return (
     <header className="bg-gray-800">
       <nav className="flex items-center justify-between flex-wrap p-6">
         <div className="flex items-center flex-shrink-0 text-white mr-6">
-          <img src="../../../assets/images/logos/logo_corporativo_greyscale.png" className="h-10 w-auto" alt="Logo" />
+          <img src={logo} className="h-10 w-auto" alt="Logo" />
         </div>
         <div className="block lg:hidden">
           <button onClick={() => setIsOpen(!isOpen)} className="flex items-center px-3 py-2 border rounded text-white border-white hover:text-white hover:border-white">
