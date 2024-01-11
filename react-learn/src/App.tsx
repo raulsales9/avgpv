@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
+import { Login } from './components/login/login';
 import { gsap } from "gsap";
 import './App.css';
 import { Header } from './components/header/header';
@@ -9,9 +10,9 @@ import  { Footer } from './components/footer/footer';
 function App() {
   return (
     <div className="App">
-      < Header />
-      <HomePage/>
-      <Footer />
+      {/* < Header /> */}
+      < Login />
+      {/* <Footer /> */}
     </div>
   );
 }
