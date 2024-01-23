@@ -14,7 +14,9 @@ header{
   height: 100px;
 }
 
-
+.bg-header{
+  background-color: #00008B;
+}
 
 .img-header{
   width: 71px;

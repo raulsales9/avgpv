@@ -1,0 +1,21 @@
+
+
+.bg-main{
+    background-color: #fdf4e4;
+    /* Asegúrate de que el color de fondo contraste bien con el color del texto para una buena legibilidad */
+    color: #333; 
+}
+
+.header{
+    background-color: #fff;
+    /* Asegúrate de que el color de fondo contraste bien con el color del texto para una buena legibilidad */
+    color: #333; 
+}
+
+.box{
+    /* Agrupa elementos relacionados dentro de la misma caja */
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}

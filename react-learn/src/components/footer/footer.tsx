@@ -3,7 +3,7 @@ import React, {useState} from "react";
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-800 text-white body-font">
+    <footer className="bg-gray-800 text-white body-font w-screen">
       <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
         <a className="flex title-font font-medium items-center md:justify-start justify-center text-white">
           <span className="ml-3 text-xl">Nombre de la Empresa</span>

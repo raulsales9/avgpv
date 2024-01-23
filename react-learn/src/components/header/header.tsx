@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
 import logo from "./../../assets/img/llamada-telefonica.svg"
+import './header.css'
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isUserAuthenticated, setUserAuthenticated] = useState(false);
   const currentUser = { name: 'Usuario' };
 
   return (
-    <header className="bg-gray-800">
+    <header>
       <nav className="flex items-center justify-between flex-wrap p-6">
         <div className="flex items-center flex-shrink-0 text-white mr-6">
-          <img src={logo} className="h-10 w-auto" alt="Logo" />
+          <img src={logo} className="h-10 w-auto" alt="Logo" />APV
         </div>
         <div className="block lg:hidden">
           <button onClick={() => setIsOpen(!isOpen)} className="flex items-center px-3 py-2 border rounded text-white border-white hover:text-white hover:border-white">
@@ -18,13 +19,13 @@ export const Header = () => {
         </div>
         <div className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? 'block' : 'hidden'}`}>
           <div className="text-sm lg:flex-grow">
-            <a href="/home" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4">
+            <a href="/home" className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black mr-4">
               Inicio
             </a>
-            <a href="/acerca-de" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4">
+            <a href="/acerca-de" className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-white mr-4">
               Acerca de
             </a>
-            <a href="/contacto" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white">
+            <a href="/contacto" className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-white">
               Contacto
             </a>
           </div>
