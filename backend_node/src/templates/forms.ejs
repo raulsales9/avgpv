@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Formulario</title>
+</head>
+<body>
+    <form action="/misdatos" method="post">
+        <label for="_id">ID:</label><br>
+        <input type="text" id="_id" name="_id" value="<%= participant._id %>"><br>
+        <label for="Nombre">Nombre:</label><br>
+        <input type="text" id="Nombre" name="Nombre" value="<%= participant.Nombre %>"><br>
+        <label for="FechaAlta">Fecha de Alta:</label><br>
+        <input type="date" id="FechaAlta" name="FechaAlta" value="<%= participant.FechaAlta %>"><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
