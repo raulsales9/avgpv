@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Post</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="text-3xl font-bold underline"><%= post.title %></h1>
+    <p class="text-3xl font-bold underline"><%= post.body %></p>
+    <p class="text-3xl font-bold underline">Publicado por: <%= user.username %></p>
+    <p>Email del autor: <%= user.mail %></p>
+    <p>Likes: <%= user.likes %></p>
+    <p>Fecha: <%= user.created_at %></p>
+</body>
+</html>
